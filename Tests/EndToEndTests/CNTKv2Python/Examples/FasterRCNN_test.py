@@ -54,7 +54,7 @@ def test_fasterrcnn_grocery_training_e2e(device_id):
         extPath = os.environ['CNTK_EXTERNAL_TESTDATA_SOURCE_DIRECTORY']
         model_file = os.path.join(extPath, "PreTrainedModels", "AlexNet", "v0", "AlexNet.model")
     else:
-        model_file = os.path.join(abs_path, *"../../../../Examples/Image/PretrainedModels/AlexNet.model".split("/"))
+        model_file = os.path.join(abs_path, *"../../../../PretrainedModels/AlexNet.model".split("/"))
 
     from FasterRCNN import train_faster_rcnn_e2e, eval_faster_rcnn_mAP
 
@@ -86,7 +86,7 @@ def test_native_fasterrcnn_eval(tmpdir, device_id):
         extPath = os.environ['CNTK_EXTERNAL_TESTDATA_SOURCE_DIRECTORY']
         model_file = os.path.join(extPath, "PreTrainedModels", "AlexNet", "v0", "AlexNet.model")
     else:
-        model_file = os.path.join(abs_path, *"../../../../Examples/Image/PretrainedModels/AlexNet.model".split("/"))
+        model_file = os.path.join(abs_path, *"../../../../PretrainedModels/AlexNet.model".split("/"))
 
     from FasterRCNN import train_faster_rcnn_e2e, eval_faster_rcnn_mAP
 
@@ -133,7 +133,7 @@ def test_fasterrcnn_grocery_training_4stage(device_id):
         extPath = os.environ['CNTK_EXTERNAL_TESTDATA_SOURCE_DIRECTORY']
         model_file = os.path.join(extPath, "PreTrainedModels", "AlexNet", "v0", "AlexNet.model")
     else:
-        model_file = os.path.join(abs_path, *"../../../../Examples/Image/PretrainedModels/AlexNet.model".split("/"))
+        model_file = os.path.join(abs_path, *"../../../../PretrainedModels/AlexNet.model".split("/"))
 
     from FasterRCNN import train_faster_rcnn_alternating, eval_faster_rcnn_mAP
 
